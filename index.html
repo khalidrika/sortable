@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="results-per-page">
+        <option value="20">20</option>
+        <option value="10">10</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="all">all</option>
+    </select>
+
+    <input type="search" id="search-input" placeholder="Search for a hero...">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th id="Name">Name</th>
+                <th id="Full">Full Name</th>
+                <th id="Powerstats">Powerstats</th>
+                <th id="Race">Race</th>
+                <th id="Gender">Gender</th>
+                <th id="Height">Height</th>
+                <th id="Weight">Weight</th>
+                <th id="Place_Of_Birth">Place Of Birth</th>
+                <th id="Alignment">Alignment</th>
+            </tr>
+        </thead>
+        <tbody id="tablebody"></tbody>
+    </table>
+
+    
+    <button id="previous" disabled>Previous</button>
+    <span>Page: <span id="current-page">1</span></span>
+    <button id="next">Next</button>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
